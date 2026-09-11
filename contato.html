@@ -1,28 +1,271 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+
+<title>Contato | Mobile Evolution</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <h1>Entre em Contato</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
+<!-- MENU -->
+<header class="header">
+    <div class="container nav">
 
-        <br><br>
+        <div class="logo">
+            <span>Mobile<span class="highlight">Evolution</span></span>
+        </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#historia">História</a>
+            <a href="#evolucao">Evolução</a>
+            <a href="#futuro">Futuro</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
 
-        <br><br>
+    </div>
+</header>
 
-        <button type="submit">Enviar</button>
-    </form>
+
+<!-- CONTATO -->
+<main class="contact-page">
+
+    <div class="container">
+
+        <div class="contact-header">
+
+            <span class="section-tag">FALE CONOSCO</span>
+
+            <h1>
+                Entre em
+                <span>contato</span>
+            </h1>
+
+            <p>
+                Tem alguma dúvida, sugestão ou gostaria de saber mais
+                sobre a evolução dos celulares? Envie uma mensagem.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <!-- INFORMAÇÕES -->
+            <section class="contact-info">
+
+                <div class="info-card">
+
+                    <div class="info-icon">📧</div>
+
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>contato@mobileevolution.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">📞</div>
+
+                    <div>
+                        <h3>Telefone</h3>
+                        <p>(17) 99999-9999</p>
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">📍</div>
+
+                    <div>
+                        <h3>Localização</h3>
+                        <p>São Paulo — SP, Brasil</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-message">
+
+                    <div class="big-icon">?</div>
+
+                    <h3>Vamos conversar?</h3>
+
+                    <p>
+                        Sua opinião ajuda a tornar este projeto
+                        cada vez melhor.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- FORMULÁRIO -->
+            <section class="contact-form">
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@exemplo.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="assunto">
+                            Assunto
+                        </label>
+
+                        <select id="assunto" name="assunto">
+
+                            <option value="">
+                                Selecione um assunto
+                            </option>
+
+                            <option value="duvida">
+                                Dúvida
+                            </option>
+
+                            <option value="sugestao">
+                                Sugestão
+                            </option>
+
+                            <option value="elogio">
+                                Elogio
+                            </option>
+
+                            <option value="outro">
+                                Outro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            placeholder="Digite sua mensagem..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="termos"
+                            required
+                        >
+
+                        <label for="termos">
+                            Confirmo que as informações preenchidas
+                            são fictícias e fazem parte deste projeto.
+                        </label>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">
+                        Enviar mensagem
+                        <span>→</span>
+                    </button>
+
+                    <p class="form-note">
+                        * Este formulário é apenas demonstrativo.
+                        Nenhuma mensagem será realmente enviada.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-content">
+
+        <div class="logo">
+            Mobile<span class="highlight">Evolution</span>
+        </div>
+
+        <p>
+            A tecnologia muda. A forma de se conectar também.
+        </p>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 — Erickson Francisco
+    </div>
+
+</footer>
+
 
 </body>
 </html>
