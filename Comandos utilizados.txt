@@ -38,3 +38,7 @@ git push
 git mv style.css estilo.css
 git status
 git add .
+git commit -a -m "Renomeando arquivo style para estilo"
+git push
+git mv estilo.css css/estilo.css
+git status
