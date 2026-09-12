@@ -28,3 +28,8 @@ git push
 git log
 git log --oneline
 Foram 7 commits
+git add .
+git commit -a -m "Criando teste.txt"
+git push
+git add .
+git status
