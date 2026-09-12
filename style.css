@@ -1638,3 +1638,332 @@ font-size: 12px;
 }
 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #172033;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+}
+
+.tag,
+.section-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #60a5fa;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: 56px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   SEÇÃO CELULARES
+========================= */
+
+.celulares {
+    padding: 90px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #172033;
+}
+
+.section-header h2 span {
+    color: #2563eb;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.card.destaque {
+    border: 2px solid #2563eb;
+}
+
+.card-number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #94a3b8;
+}
+
+.phone-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 16px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.year {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin: 8px 0 15px;
+    color: #172033;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ATRIBUTOS
+========================= */
+
+.attributes {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 18px;
+}
+
+.attributes div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.attributes div:last-child {
+    border-bottom: none;
+}
+
+.attributes span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.attributes strong {
+    font-size: 13px;
+    color: #172033;
+    text-align: right;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+}
+
+.footer-content {
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content .logo {
+    color: white;
+}
+
+.footer-content p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #1e293b;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .section-header h2 {
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .celulares {
+        padding: 60px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
