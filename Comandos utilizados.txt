@@ -33,3 +33,8 @@ git commit -a -m "Criando teste.txt"
 git push
 git add .
 git status
+git commit -a -m "Removendo teste.txt"
+git push
+git mv style.css estilo.css
+git status
+git add .
