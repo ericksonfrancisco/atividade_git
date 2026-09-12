@@ -16,3 +16,15 @@ git commit -a -m  "Alterações iniciais no HTML"
 git push
 git add .
 git commit -a -m  "Alterações nos arquivos"
+git remote set-url origin https://github.com/ericksonfrancisco/atividade_git.git
+git remote -v 
+git add . 
+git commit -a -m "Primeiro commit para o repositorio novo"
+git push -u origin main
+git status
+git add .
+git commit -a -m "Passo 5 adicionando página celulares"  
+git push
+git log
+git log --oneline
+Foram 7 commits
