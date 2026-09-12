@@ -42,3 +42,8 @@ git commit -a -m "Renomeando arquivo style para estilo"
 git push
 git mv estilo.css css/estilo.css
 git status
+git add .
+git commit -a -m "Movendo estilo.css" 
+git push
+git status
+O .env não é enviado por conter informações sensíveis
